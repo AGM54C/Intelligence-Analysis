@@ -1,0 +1,16 @@
+{
+  "final_verdict": "supported",
+  "final_evidence_sufficient": true,
+  "annotation_basis": "完整场景的 x=465..490、y=300..527 区域绘制黑黄隔栏，局部图不含这一区域。视觉变体使用同一场景但不绘制隔栏。",
+  "acceptable_support_sets": [
+    [
+      "E04"
+    ]
+  ],
+  "visual_relation_change": {
+    "verdict": "refuted",
+    "annotation_basis": "完整场景的 x=465..490、y=300..527 区域绘制黑黄隔栏，局部图不含这一区域。视觉变体使用同一场景但不绘制隔栏。"
+  },
+  "annotation_status": "AUTHOR_CONSTRUCTED_NOT_INDEPENDENTLY_ANNOTATED",
+  "stages_1_2": "May be insufficient; not scored as a unique online truth."
+}

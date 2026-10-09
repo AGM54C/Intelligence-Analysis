@@ -1,0 +1,33 @@
+{
+  "material_type": "SYNTHETIC_CONTROLLED_DRAWING",
+  "real_event": false,
+  "event_group": "SYNTH_D003",
+  "author": "Synthetic fixture generator",
+  "generator": "evidence_pilot.dev_data",
+  "licensing": "Original local drawings for this pilot; no external photographs.",
+  "timestamps": "Fictional within-case timestamps, not real archival dates.",
+  "transformations": {
+    "I01": {
+      "root": "scene_a",
+      "crop": [
+        80,
+        150,
+        845,
+        515
+      ]
+    },
+    "I02": {
+      "root": "scene_a",
+      "resize": [
+        720,
+        432
+      ]
+    },
+    "I03": {
+      "root": "scene_b"
+    }
+  },
+  "human_review": "PENDING",
+  "model_based_case_selection": false,
+  "limitations": "Shared renderer/style; development fixtures are not independent real-world events or diagnostic benchmark samples."
+}

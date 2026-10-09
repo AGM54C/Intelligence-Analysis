@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "image_id": "I01",
+      "observations": [
+        "局部图可见蓝车与一小片周围地面。"
+      ]
+    },
+    {
+      "image_id": "I02",
+      "observations": [
+        "完整画面左侧是蓝车、右侧是红车，两车中间有一段黑黄相间的纵向隔栏。"
+      ]
+    }
+  ],
+  "status": "AUTHOR_WRITTEN_OBSERVATIONS_FOR_ABLATION"
+}

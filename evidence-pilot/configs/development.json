@@ -1,0 +1,171 @@
+{
+  "protocol_version": "0.2",
+  "status": "DEVELOPMENT_ONLY_GPU_UNVERIFIED",
+  "ready_for_model_execution": false,
+  "model": {
+    "id": "Qwen/Qwen3.5-9B",
+    "revision": null,
+    "dtype": "bfloat16",
+    "training": false,
+    "secondary_model_required": false
+  },
+  "runtime": {
+    "gpu": "1 x A100 80GB",
+    "backend_proposal": "transformers",
+    "framework_versions": null,
+    "batch_size": 1,
+    "max_concurrent_requests": 1,
+    "context_tokens": 16384,
+    "max_input_tokens_including_vision": 8192,
+    "max_new_tokens_including_thinking": 8192,
+    "max_images_per_request": 4,
+    "image_processor_configuration": {
+      "min_pixels": 65536,
+      "max_pixels": 589824
+    },
+    "silent_input_truncation_allowed": false,
+    "automatic_format_retries": 0,
+    "frozen": false,
+    "max_generation_seconds": 300
+  },
+  "generation": {
+    "enable_thinking": true,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "base_seed": 20261008,
+    "seed_rule": "base_seed + 100 * fixed_case_ordinal + stage; do not include history"
+  },
+  "data": {
+    "development_cases_target": 4,
+    "families": [
+      "image_context",
+      "crop_context",
+      "source_dependence"
+    ],
+    "claim_target_time_fixed": true,
+    "histories": [
+      "clean",
+      "misled"
+    ],
+    "stages": [
+      1,
+      2,
+      3
+    ],
+    "final_effective_bundle_identical_across_histories": true,
+    "retraction_status": "explicit_environment_revision",
+    "open_web_search": false,
+    "manifest": "../experiments/data/image-text-pilot/case_manifest.csv",
+    "manifest_frozen": false,
+    "development_material_type": "SYNTHETIC_CONTROLLED_DRAWING"
+  },
+  "methods": {
+    "A": {
+      "name": "single_hypothesis_update",
+      "retained_hypotheses": 1
+    },
+    "B": {
+      "name": "restart_from_current_evidence",
+      "retained_hypotheses": 0,
+      "within_call_candidates_max": 4
+    },
+    "C": {
+      "name": "ordinary_population",
+      "retained_hypotheses": 4,
+      "new_candidates_max": 4
+    }
+  },
+  "state": {
+    "maximum_visible_state_tokens": 2048,
+    "retain_raw_chat_history": false,
+    "retain_thinking_text": false,
+    "hypothesis_id_semantics_immutable": true,
+    "gold_labels_visible_to_model": false,
+    "verdicts": [
+      "supported",
+      "refuted",
+      "insufficient"
+    ],
+    "invalid_output_policy": "carry_last_valid_state_without_retry",
+    "id_statement_rule": "statement_is_lexically_immutable_for_an_existing_id"
+  },
+  "required_plan": [
+    {
+      "id": "E1_core",
+      "cases": 4,
+      "histories": 2,
+      "stages": 3,
+      "methods": 3,
+      "planned_calls": 72
+    },
+    {
+      "id": "E2_text_only",
+      "cases": 4,
+      "method": "B",
+      "stage": 3,
+      "planned_calls": 4
+    },
+    {
+      "id": "E2_human_visual_facts",
+      "cases": 4,
+      "method": "B",
+      "stage": 3,
+      "planned_calls": 4
+    },
+    {
+      "id": "E2_late_false_report",
+      "case_ids": [
+        "D001",
+        "D002",
+        "D003",
+        "D004"
+      ],
+      "history": "misled",
+      "stage": 4,
+      "methods": [
+        "A",
+        "B",
+        "C"
+      ],
+      "planned_calls": 12
+    },
+    {
+      "id": "E2_visual_relation_change",
+      "case_ids": [
+        "D001",
+        "D002",
+        "D003",
+        "D004"
+      ],
+      "method": "B",
+      "stage": 3,
+      "planned_calls": 4
+    }
+  ],
+  "budget": {
+    "max_runtime_hours": 24,
+    "logical_requests_full_suite": 96
+  },
+  "primary_analysis": {
+    "unit": "independent_event_group",
+    "comparisons": [
+      "A: clean vs misled",
+      "C: clean vs misled"
+    ],
+    "negative_control": "B final requests have identical effective inputs and paired seed",
+    "metrics": [
+      "final_accuracy",
+      "paired_outcome_transition_counts",
+      "per_label_recall",
+      "coverage",
+      "grounded_correct_count",
+      "invalid_or_truncated_count",
+      "total_runtime_and_tokens"
+    ],
+    "statistical_status": "exploratory; no power or significance claim"
+  }
+}

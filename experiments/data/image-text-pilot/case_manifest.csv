@@ -1,0 +1,5 @@
+case_id,event_group,split,family,reference_label,status,public_bundle_path,gold_path,image_audit,evidence_sufficiency_audit,notes
+D001,SYNTH_D001,development,image_context,refuted,DEV_READY,cases/D001/public,cases/D001/private/gold.json,GENERATED_BYTES_HASHED,AUTHOR_CONSTRUCTED,synthetic drawing; human review pending; never count as diagnostic evidence
+D002,SYNTH_D002,development,crop_context,refuted,DEV_READY,cases/D002/public,cases/D002/private/gold.json,GENERATED_BYTES_HASHED,AUTHOR_CONSTRUCTED,synthetic drawing; human review pending; never count as diagnostic evidence
+D003,SYNTH_D003,development,source_dependence,supported,DEV_READY,cases/D003/public,cases/D003/private/gold.json,GENERATED_BYTES_HASHED,AUTHOR_CONSTRUCTED,synthetic drawing; human review pending; never count as diagnostic evidence
+D004,SYNTH_D004,development,crop_context,supported,DEV_READY,cases/D004/public,cases/D004/private/gold.json,GENERATED_BYTES_HASHED,AUTHOR_CONSTRUCTED,synthetic drawing; human review pending; never count as diagnostic evidence

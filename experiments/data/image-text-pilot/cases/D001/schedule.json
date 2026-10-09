@@ -1,0 +1,101 @@
+{
+  "histories": {
+    "clean": {
+      "1": {
+        "active_evidence_ids": [
+          "E01"
+        ],
+        "revision_events": []
+      },
+      "2": {
+        "active_evidence_ids": [
+          "E01",
+          "E03"
+        ],
+        "revision_events": []
+      },
+      "3": {
+        "active_evidence_ids": [
+          "E01",
+          "E04"
+        ],
+        "revision_events": [
+          {
+            "evidence_id": "E02",
+            "status": "withdrawn",
+            "replacement_ids": []
+          },
+          {
+            "evidence_id": "E03",
+            "status": "withdrawn",
+            "replacement_ids": []
+          }
+        ]
+      }
+    },
+    "misled": {
+      "1": {
+        "active_evidence_ids": [
+          "E01"
+        ],
+        "revision_events": []
+      },
+      "2": {
+        "active_evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "revision_events": []
+      },
+      "3": {
+        "active_evidence_ids": [
+          "E01",
+          "E04"
+        ],
+        "revision_events": [
+          {
+            "evidence_id": "E02",
+            "status": "withdrawn",
+            "replacement_ids": []
+          },
+          {
+            "evidence_id": "E03",
+            "status": "withdrawn",
+            "replacement_ids": []
+          }
+        ]
+      }
+    }
+  },
+  "controls": {
+    "late_false_report": {
+      "active_evidence_ids": [
+        "E01",
+        "E04",
+        "E05"
+      ],
+      "revision_events": [
+        {
+          "evidence_id": "E02",
+          "status": "withdrawn",
+          "replacement_ids": []
+        },
+        {
+          "evidence_id": "E03",
+          "status": "withdrawn",
+          "replacement_ids": []
+        }
+      ]
+    },
+    "visual_relation_change": {
+      "image_overrides": {
+        "I01": {
+          "file": "a04.png",
+          "sha256": "98ac2aaf754be9710f4f2362fa01c516efacd35e5d87b28f3aef69d78149c058",
+          "width": 350,
+          "height": 330
+        }
+      }
+    }
+  }
+}

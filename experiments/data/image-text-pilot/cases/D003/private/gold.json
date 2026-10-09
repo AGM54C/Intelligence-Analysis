@@ -1,0 +1,18 @@
+{
+  "final_verdict": "supported",
+  "final_evidence_sufficient": true,
+  "annotation_basis": "I01/I02 由相同底图裁剪和缩放；I03 交换两车的位置但固定地标不动。变体将 I03 换为原底图，所以三个版本均可从同一底图得到。",
+  "acceptable_support_sets": [
+    [
+      "E01",
+      "E04",
+      "E06"
+    ]
+  ],
+  "visual_relation_change": {
+    "verdict": "refuted",
+    "annotation_basis": "I01/I02 由相同底图裁剪和缩放；I03 交换两车的位置但固定地标不动。变体将 I03 换为原底图，所以三个版本均可从同一底图得到。"
+  },
+  "annotation_status": "AUTHOR_CONSTRUCTED_NOT_INDEPENDENTLY_ANNOTATED",
+  "stages_1_2": "May be insufficient; not scored as a unique online truth."
+}

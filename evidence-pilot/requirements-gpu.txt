@@ -1,0 +1,8 @@
+# Install a CUDA-compatible torch/torchvision build for your A100 image first.
+# Exact versions below match the local integration probe; A100/Qwen weights remain untested.
+torch==2.9.1
+torchvision==0.24.1
+transformers==5.19.0
+accelerate==1.15.0
+Pillow>=10,<13
+requests>=2.32,<3

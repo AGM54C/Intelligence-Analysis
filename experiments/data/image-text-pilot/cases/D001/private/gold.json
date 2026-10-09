@@ -1,0 +1,17 @@
+{
+  "final_verdict": "refuted",
+  "final_evidence_sufficient": true,
+  "annotation_basis": "a01.png 是 a02.png 的矩形裁剪 (100,130,450,460)。视觉变体将同一区域的蓝车改为绿车，不能由原底图的裁剪/缩放得到。",
+  "acceptable_support_sets": [
+    [
+      "E01",
+      "E04"
+    ]
+  ],
+  "visual_relation_change": {
+    "verdict": "supported",
+    "annotation_basis": "a01.png 是 a02.png 的矩形裁剪 (100,130,450,460)。视觉变体将同一区域的蓝车改为绿车，不能由原底图的裁剪/缩放得到。"
+  },
+  "annotation_status": "AUTHOR_CONSTRUCTED_NOT_INDEPENDENTLY_ANNOTATED",
+  "stages_1_2": "May be insufficient; not scored as a unique online truth."
+}

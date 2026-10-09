@@ -1,0 +1,101 @@
+{
+  "histories": {
+    "clean": {
+      "1": {
+        "active_evidence_ids": [
+          "E01"
+        ],
+        "revision_events": []
+      },
+      "2": {
+        "active_evidence_ids": [
+          "E01",
+          "E03"
+        ],
+        "revision_events": []
+      },
+      "3": {
+        "active_evidence_ids": [
+          "E01",
+          "E04"
+        ],
+        "revision_events": [
+          {
+            "evidence_id": "E02",
+            "status": "withdrawn",
+            "replacement_ids": []
+          },
+          {
+            "evidence_id": "E03",
+            "status": "withdrawn",
+            "replacement_ids": []
+          }
+        ]
+      }
+    },
+    "misled": {
+      "1": {
+        "active_evidence_ids": [
+          "E01"
+        ],
+        "revision_events": []
+      },
+      "2": {
+        "active_evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "revision_events": []
+      },
+      "3": {
+        "active_evidence_ids": [
+          "E01",
+          "E04"
+        ],
+        "revision_events": [
+          {
+            "evidence_id": "E02",
+            "status": "withdrawn",
+            "replacement_ids": []
+          },
+          {
+            "evidence_id": "E03",
+            "status": "withdrawn",
+            "replacement_ids": []
+          }
+        ]
+      }
+    }
+  },
+  "controls": {
+    "late_false_report": {
+      "active_evidence_ids": [
+        "E01",
+        "E04",
+        "E05"
+      ],
+      "revision_events": [
+        {
+          "evidence_id": "E02",
+          "status": "withdrawn",
+          "replacement_ids": []
+        },
+        {
+          "evidence_id": "E03",
+          "status": "withdrawn",
+          "replacement_ids": []
+        }
+      ]
+    },
+    "visual_relation_change": {
+      "image_overrides": {
+        "I02": {
+          "file": "a04.png",
+          "sha256": "3f66615f437e1475bcfe0b78b30455d96ce6ad0435f9c98aaac3819c6f80cc61",
+          "width": 900,
+          "height": 540
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "image_id": "I01",
+      "observations": [
+        "画面有蓝色车辆，车辆上方是四窗建筑的局部。"
+      ]
+    },
+    {
+      "image_id": "I02",
+      "observations": [
+        "完整画面左侧蓝色车辆、建筑窗框的形状和相对位置与 I01 的局部一致；右侧还有红色车辆和树。"
+      ]
+    }
+  ],
+  "status": "AUTHOR_WRITTEN_OBSERVATIONS_FOR_ABLATION"
+}

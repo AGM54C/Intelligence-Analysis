@@ -1,0 +1,25 @@
+{
+  "images": [
+    {
+      "image_id": "I01",
+      "file": "a01.png",
+      "sha256": "91f0517d6697189f0754944149b584ea22a8a27655a6952345bec255ee85cc6b",
+      "width": 765,
+      "height": 365
+    },
+    {
+      "image_id": "I02",
+      "file": "a02.png",
+      "sha256": "8e9f07b375688a2ff893c5f4cc22949bc57d1338beda5b07f35dd300b9f3a208",
+      "width": 720,
+      "height": 432
+    },
+    {
+      "image_id": "I03",
+      "file": "a03.png",
+      "sha256": "5f77c540b53883594002740898ce279a05117f1bf2a4a9260da05087ee9fff2f",
+      "width": 900,
+      "height": 540
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "images": [
+    {
+      "image_id": "I01",
+      "file": "a01.png",
+      "sha256": "b7baf20db7479afb99a174dd52942e2047aee027c3e3f7b02b8710e9e68ab3b3",
+      "width": 350,
+      "height": 330
+    },
+    {
+      "image_id": "I02",
+      "file": "a02.png",
+      "sha256": "3f66615f437e1475bcfe0b78b30455d96ce6ad0435f9c98aaac3819c6f80cc61",
+      "width": 900,
+      "height": 540
+    }
+  ]
+}

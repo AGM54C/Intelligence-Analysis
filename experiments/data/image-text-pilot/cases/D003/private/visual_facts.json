@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "image_id": "I01",
+      "observations": [
+        "蓝车在红车左侧，蓝车靠近左侧建筑。"
+      ]
+    },
+    {
+      "image_id": "I02",
+      "observations": [
+        "完整画面蓝车仍在红车左侧，固定建筑和路锥排列与 I01 相容。"
+      ]
+    },
+    {
+      "image_id": "I03",
+      "observations": [
+        "固定建筑、树和路锥位置不变，蓝车在红车右侧，车辆相对建筑的位置与前两图不同。"
+      ]
+    }
+  ],
+  "status": "AUTHOR_WRITTEN_OBSERVATIONS_FOR_ABLATION"
+}

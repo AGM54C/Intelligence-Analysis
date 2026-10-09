@@ -1,0 +1,104 @@
+{
+  "histories": {
+    "clean": {
+      "1": {
+        "active_evidence_ids": [
+          "E01"
+        ],
+        "revision_events": []
+      },
+      "2": {
+        "active_evidence_ids": [
+          "E01",
+          "E03"
+        ],
+        "revision_events": []
+      },
+      "3": {
+        "active_evidence_ids": [
+          "E01",
+          "E04",
+          "E06"
+        ],
+        "revision_events": [
+          {
+            "evidence_id": "E02",
+            "status": "withdrawn",
+            "replacement_ids": []
+          },
+          {
+            "evidence_id": "E03",
+            "status": "withdrawn",
+            "replacement_ids": []
+          }
+        ]
+      }
+    },
+    "misled": {
+      "1": {
+        "active_evidence_ids": [
+          "E01"
+        ],
+        "revision_events": []
+      },
+      "2": {
+        "active_evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "revision_events": []
+      },
+      "3": {
+        "active_evidence_ids": [
+          "E01",
+          "E04",
+          "E06"
+        ],
+        "revision_events": [
+          {
+            "evidence_id": "E02",
+            "status": "withdrawn",
+            "replacement_ids": []
+          },
+          {
+            "evidence_id": "E03",
+            "status": "withdrawn",
+            "replacement_ids": []
+          }
+        ]
+      }
+    }
+  },
+  "controls": {
+    "late_false_report": {
+      "active_evidence_ids": [
+        "E01",
+        "E04",
+        "E06",
+        "E05"
+      ],
+      "revision_events": [
+        {
+          "evidence_id": "E02",
+          "status": "withdrawn",
+          "replacement_ids": []
+        },
+        {
+          "evidence_id": "E03",
+          "status": "withdrawn",
+          "replacement_ids": []
+        }
+      ]
+    },
+    "visual_relation_change": {
+      "image_overrides": {
+        "I03": {
+          "file": "a04.png",
+          "sha256": "ff35712ca53faea9c3b17a058f8f4f16d569970229d4a0055c73bd0b8dbcd127",
+          "width": 900,
+          "height": 540
+        }
+      }
+    }
+  }
+}

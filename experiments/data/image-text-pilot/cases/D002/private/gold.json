@@ -1,0 +1,16 @@
+{
+  "final_verdict": "refuted",
+  "final_evidence_sufficient": true,
+  "annotation_basis": "原始完整画面绘制两辆车；I01 的裁剪区域只包含左车。视觉变体重新绘制相同场景但仅保留左车，I01 局部不变。",
+  "acceptable_support_sets": [
+    [
+      "E04"
+    ]
+  ],
+  "visual_relation_change": {
+    "verdict": "supported",
+    "annotation_basis": "原始完整画面绘制两辆车；I01 的裁剪区域只包含左车。视觉变体重新绘制相同场景但仅保留左车，I01 局部不变。"
+  },
+  "annotation_status": "AUTHOR_CONSTRUCTED_NOT_INDEPENDENTLY_ANNOTATED",
+  "stages_1_2": "May be insufficient; not scored as a unique online truth."
+}

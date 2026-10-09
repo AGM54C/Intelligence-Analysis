@@ -1,0 +1,32 @@
+# Python environments and generated artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+.local/
+.cache/
+models/
+outputs/
+experiments/results/
+*.log
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+.aws/
+.codex/
+.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

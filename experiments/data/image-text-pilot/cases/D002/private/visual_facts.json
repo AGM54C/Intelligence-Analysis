@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "image_id": "I01",
+      "observations": [
+        "局部画面可见一辆蓝色车辆。"
+      ]
+    },
+    {
+      "image_id": "I02",
+      "observations": [
+        "完整画面左侧有蓝车，右侧有红车，两辆车彼此分离。"
+      ]
+    }
+  ],
+  "status": "AUTHOR_WRITTEN_OBSERVATIONS_FOR_ABLATION"
+}
